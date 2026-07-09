@@ -1,0 +1,15 @@
+# Block Node Modules (Prevents the Vercel 126 Crash)
+node_modules/
+*/node_modules/
+
+# Block Environment Variables (Protects your MongoDB and API keys)
+.env
+.env.*
+*.env
+
+# Block Build Folders (Keeps GitHub clean)
+dist/
+build/
+
+# Block system files
+.DS_Store

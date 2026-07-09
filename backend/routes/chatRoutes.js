@@ -1,0 +1,7 @@
+import express from 'express';
+import { askAI } from '../controllers/chatController.js';
+import { protect } from '../middleware/authMiddleware.js';
+
+const router = express.Router();
+router.post('/ask', protect, askAI);
+export default router;
